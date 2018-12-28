@@ -11,5 +11,11 @@ var student1 = {
     }
 }
 
+var student2 = {
+    name: 'ck',
+    age: 30,
+    job: 'marketer'
+}
 
-student1.presentation('good',20);
+
+student1.presentation.call(student2,'bad',30);
